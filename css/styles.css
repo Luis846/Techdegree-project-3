@@ -1,0 +1,121 @@
+* {
+
+}
+
+
+body {
+  width: 100%;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+}
+.top-hr,.hr-bottom {
+  height: 5px;
+  background-color: rgb(32, 164, 132);
+}
+
+.top-2ndhr,.bottom-2ndhr {
+  height: 2px;
+  background-color: black;
+  display: block;
+  text-align: center;
+}
+h1 {
+  display: block;
+  text-align: center;
+  background: rgb(4, 118, 134);
+  color: white;
+  margin: 0;
+
+}
+fieldset {
+  border: 0;
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.contact {
+  font-size: 25px;
+  display: flex;
+  text-align: left;
+
+}
+
+.newsletter {
+  font-size: 25px;
+}
+
+
+}
+::placeholder {
+  text-align: right;
+}
+
+input:focus-within,
+textarea {
+  background-color: lightyellow;
+}
+input,
+select,
+textarea {
+  margin-left: 5px;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  border-radius: 5px;
+  background-color: lightyellow;
+  border-color: transparent;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus {
+  background-color: lightyellow;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+select {
+  width: 95%;
+  height: 50px;
+}
+
+#zipcode {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+}
+
+textarea {
+  width: auto;
+}
+button {
+  color: white;
+  background-color: teal;
+  height: 50px;
+  width: 500px;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-size: 16px;
+  cursor:pointer;
+}
+
+.pfoot {
+  font-size: 12px;
+}
+.first,.second {
+  display:inline-flex;
+  flex-direction: column;
+  width: 400px;
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+}
