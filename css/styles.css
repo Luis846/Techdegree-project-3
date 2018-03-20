@@ -117,5 +117,17 @@ button {
 
 @media only screen and (min-width: 768px) {
 
+  input[id="name"],
+  input[id="email"],
+  input[id="telephone"],
+  input[id="address"],
+  input[id="city"],
+  select {
+    flex: 2;
+  }
 
+  input[id="zipcode"] {
+    flex: 1;
+    margin-right: 14em;
+  }
 }
