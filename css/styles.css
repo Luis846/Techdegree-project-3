@@ -54,7 +54,6 @@ form {
   text-align: right;
 }
 
-input:focus-within,
 textarea {
   background-color: lightyellow;
 }
@@ -90,14 +89,15 @@ select {
   align-items: flex-start;
 }
 
-textarea {
-  width: auto;
+
+#moreinfo {
+  width: 98%;
 }
 button {
   color: white;
   background-color: teal;
   height: 50px;
-  width: 500px;
+  width: 30em;
   border-radius: 5px;
   margin-left: 5px;
   font-size: 16px;
@@ -110,12 +110,13 @@ button {
 .first,.second {
   display:inline-flex;
   flex-direction: column;
-  width: 400px;
+  width: 70%;
 
 
 }
 
 @media only screen and (min-width: 768px) {
+
 
   input[id="name"],
   input[id="email"],
