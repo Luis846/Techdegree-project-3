@@ -46,6 +46,7 @@ form {
 
 .newsletter {
   font-size: 25px;
+  padding-top: 25px;
 }
 
 
@@ -84,22 +85,20 @@ select {
 }
 
 
-#moreinfo {
-  width: 98%;
-}
+
+
 button {
   color: white;
   background-color: teal;
   height: 50px;
-  width: 33em;
+  width: 100%;
   border-radius: 5px;
-  margin-left: 5px;
   font-size: 16px;
   cursor:pointer;
 }
 
 .pfoot {
-  font-size: 12px;
+  font-size: 15px;
 }
 .first,.second {
   display:inline-flex;
@@ -118,12 +117,14 @@ button {
   input[id="telnum"],
   input[id="address"],
   input[id="city"],
-  input[id="zipcode"],
   select {
 
     width: 70%;
     flex: 2;
   }
+  /*input[id="zipcode"] {
+    width: 35%;
+  }*/
 
 #fullname {
 
@@ -141,7 +142,7 @@ button {
 
 #address {
 
-  margin-left: 7%;
+  margin-left: 33px;
 }
 
 #city {
@@ -158,6 +159,13 @@ button {
     width: 35%;
   }
 
-
-
+.pfoot {
+  text-align: center;
+}
+#moreinfo {
+  margin:auto;
+}
+#submit {
+  margin:auto;
+}
 }
