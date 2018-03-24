@@ -83,12 +83,6 @@ select {
   height: 50px;
 }
 
-#zipcode {
-  width: 50%;
-  display: flex;
-  align-items: flex-start;
-}
-
 
 #moreinfo {
   width: 98%;
@@ -97,7 +91,7 @@ button {
   color: white;
   background-color: teal;
   height: 50px;
-  width: 30em;
+  width: 33em;
   border-radius: 5px;
   margin-left: 5px;
   font-size: 16px;
@@ -118,17 +112,52 @@ button {
 @media only screen and (min-width: 768px) {
 
 
-  input[id="name"],
-  input[id="email"],
-  input[id="telephone"],
+
+  input[id="fullname"],
+  input[id="mail"],
+  input[id="telnum"],
   input[id="address"],
   input[id="city"],
+  input[id="zipcode"],
   select {
+
+    width: 70%;
     flex: 2;
   }
 
-  input[id="zipcode"] {
-    flex: 1;
-    margin-right: 14em;
+#fullname {
+
+  margin-left: 14%;
+
+}
+#mail {
+  margin-left: 8%;
+
+}
+
+#telnum {
+  margin-left: 8%;
+}
+
+#address {
+
+  margin-left: 7%;
+}
+
+#city {
+  margin-left: 22%;
+}
+
+#state {
+
+  margin-left: 20%;
+}
+
+#zipcode {
+  margin-left: 17%;
+    width: 35%;
   }
+
+
+
 }
