@@ -1,31 +1,53 @@
 * {
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.wrapper {
+   flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
 
 body {
   width: 100%;
   font-family: 'Indie Flower', cursive;
   text-align: center;
 }
-.top-hr,.hr-bottom {
-  height: 5px;
-  background-color: rgb(32, 164, 132);
+.top-hr {
+  height: 10px;
+  margin: 20px auto;
+  border-top: 4px solid rgb(32, 64, 175);
+  border-bottom: 2px solid rgb(32, 64, 175);
+  border-left: 0;
+  border-right: 0;
+}
+.hr-bottom {
+  height: 10px;
+  margin: 20px auto;
+  border-bottom: 2px solid rgb(32, 64, 175);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0 rgb(32, 64, 175);
 }
 
-.top-2ndhr,.bottom-2ndhr {
-  height: 2px;
-  background-color: black;
-  display: block;
-  text-align: center;
-}
 h1 {
   display: block;
   text-align: center;
-  background: rgb(4, 118, 134);
+  background: rgb(32, 64, 175);
   color: white;
   margin: 0;
-
+}
+h2 {
+  padding: 10px;
+}
+p{
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 fieldset {
   border: 0;
@@ -36,6 +58,7 @@ form {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+
 }
 .contact {
   font-size: 25px;
@@ -89,7 +112,7 @@ select {
 
 button {
   color: white;
-  background-color: teal;
+  background-color: rgb(32, 64, 175);
   height: 50px;
   width: 100%;
   border-radius: 5px;
@@ -100,16 +123,22 @@ button {
 .pfoot {
   font-size: 15px;
 }
-.first,.second {
-  display:inline-flex;
-  flex-direction: column;
-  width: 70%;
-
-
+#zipcode {
+  display: block;
+  width: 50%;
 }
 
 @media only screen and (min-width: 768px) {
-
+.wrapper {
+  justify-content: center;
+  align-items: center;
+}
+  .group {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: row;
+      align-items: center;
+    }
 
 
   input[id="fullname"],
@@ -118,54 +147,34 @@ button {
   input[id="address"],
   input[id="city"],
   select {
-
     width: 70%;
     flex: 2;
   }
-  /*input[id="zipcode"] {
-    width: 35%;
-  }*/
-
 #fullname {
-
-  margin-left: 14%;
-
+  margin-left: 10%;
+  width: 77.8%;
 }
 #mail {
-  margin-left: 8%;
-
+  margin-left: 6%;
 }
-
 #telnum {
-  margin-left: 8%;
+  margin-left: 5.5%;
 }
-
 #address {
-
-  margin-left: 33px;
+  margin-left: 4.5%;
 }
-
 #city {
-  margin-left: 22%;
+  margin-left: 18.5%;
 }
-
 #state {
-
-  margin-left: 20%;
+  margin-left: 16.5%;
 }
-
 #zipcode {
-  margin-left: 17%;
-    width: 35%;
-  }
+  margin-left: 13.5%;
+}
 
-.pfoot {
-  text-align: center;
-}
-#moreinfo {
-  margin:auto;
-}
-#submit {
-  margin:auto;
-}
+
+    textarea {
+      resize: none;
+    }
 }
